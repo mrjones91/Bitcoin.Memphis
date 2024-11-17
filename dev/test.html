@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOM - Testing Page</title>
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="p-8">
+    <div class="max-w-2xl mx-auto">
+        <h1 class="text-3xl font-bold mb-6">BOOM Component Testing</h1>
+        
+        <div class="space-y-8">
+            <!-- Theme Toggle Test -->
+            <section class="border p-4 rounded-lg">
+                <h2 class="text-xl font-semibold mb-4">Theme Toggle Test</h2>
+                <div class="flex space-x-4">
+                    <button id="themeToggle" class="theme-toggle">
+                        <i data-icon="sun" class="hidden dark:block"></i>
+                        <i data-icon="moon" class="block dark:hidden"></i>
+                    </button>
+                    <button id="themeToggleMobile" class="theme-toggle">
+                        <i data-icon="sun" class="hidden dark:block"></i>
+                        <i data-icon="moon" class="block dark:hidden"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Mobile Menu Test -->
+            <section class="border p-4 rounded-lg">
+                <h2 class="text-xl font-semibold mb-4">Mobile Menu Test</h2>
+                <button id="menuToggle">
+                    <i data-icon="menu"></i>
+                </button>
+                <div id="mobileMenu" class="hidden mt-4">
+                    <a href="#about" class="block py-2">About</a>
+                    <a href="#mission" class="block py-2">Mission</a>
+                    <a href="#projects" class="block py-2">Projects</a>
+                    <a href="#contact" class="block py-2">Contact</a>
+                </div>
+            </section>
+
+            <!-- Smooth Scroll Test -->
+            <section class="border p-4 rounded-lg">
+                <h2 class="text-xl font-semibold mb-4">Smooth Scroll Test</h2>
+                <div class="space-y-4">
+                    <div id="about" class="h-32 bg-gray-100 flex items-center justify-center">
+                        About Section
+                    </div>
+                    <div id="mission" class="h-32 bg-gray-100 flex items-center justify-center">
+                        Mission Section
+                    </div>
+                    <div id="projects" class="h-32 bg-gray-100 flex items-center justify-center">
+                        Projects Section
+                    </div>
+                    <div id="contact" class="h-32 bg-gray-100 flex items-center justify-center">
+                        Contact Section
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Test Controls -->
+        <div class="mt-8 space-y-4">
+            <button onclick="TestUtils.runAllTests()" class="btn-primary">
+                Run All Tests
+            </button>
+            <div id="testResults" class="whitespace-pre font-mono text-sm"></div>
+        </div>
+    </div>
+
+    <script src="js/icons.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/test-utils.js"></script>
+</body>
+</html> 
