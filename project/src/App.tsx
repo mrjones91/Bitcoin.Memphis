@@ -10,7 +10,7 @@ function App() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="container mx-auto text-center items-center">
-        <img className="justify-center" src="https://res.cloudinary.com/dijital-technologies/image/upload/v1731818858/BOOM/boomi.png" style={{maxWidth:400, display: 'inline-flex'}} />
+        <img className="justify-center" src="https://res.cloudinary.com/dijital-technologies/image/upload/v1731818858/BOOM/boomi.png" style={{maxWidth:'80vw', display: 'inline-flex'}} />
           <h1 className="text-5xl md:text-7xl font-bold mb-6 dark:text-white">
             BOOM <span className="text-2xl md:text-3xl text-gray-600 dark:text-gray-400">(Bitcoin Office of Memphis)</span>
           </h1>
